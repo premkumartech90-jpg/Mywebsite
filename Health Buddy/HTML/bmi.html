@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/CSS/bmi.css">
+  <script src="/JS/bmi.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- HERE STARTS MY CODIND TEST -->
+  <div class="container">
+    <div class="header finisher-header">
+      <div class="logo">
+        <div class="text1">
+          <H1>HEAL</H1>
+        </div>
+        <div class="box1">
+          <div class="t">+</div>
+        </div>
+        <div class="text2">
+          <h1>HBUDDY</h1>
+        </div>
+      </div>
+      <!-- links -->
+      <div class="navbar">
+                <div class="options">
+                    <a href="home.html" id="a1">HOME</a>
+                    <a href="health.html" class="active1" id="a1">HEALTH</a>
+                    <a href="about.html" id="a1">ABOUT</a>
+                    <!-- Menu Button -->
+                    <div class="menu-container">
+                        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="dropdownMenu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </button>
+
+            <!-- Dropdown Menu -->
+            <div class="dropdown" id="dropdownMenu">
+              <a href="#account.html"><i class="fa fa-user"></i> Account</a>
+              <a href="about.html"><i class="fa fa-circle-info"></i> About Us</a>
+              <a href="#"><i class="fa fa-envelope"></i> Contact Us</a>
+              <a href="#"><i class="fa fa-file-alt"></i> Blogs</a>
+              <a href="#"><i class="fa fa-gear"></i> Settings</a>
+              <a href="#"><i class="fa fa-share-alt"></i> Social Media</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br><Br><div class="hr"></div>
+   <div class="navbar2">
+        <div class="options2">
+            <a href="health.html"  id="a2">GYM</a>
+            <a href="yoga.html" id="a2">YOGA</a>
+            <a href="Balance exercise.html" id="a2">BALANCE EXERCISE</a>
+            <a href="bmi.html" class="active2" id="a2">BMI</a>
+        </div>
+    </div><br><div class="hr2"></div>
+
+  <div class="bmi-container">
+    <h1 id="h1">BMI Calculator</h1>
+    <label>Height (cm)</label>
+    <input type="number" id="height" placeholder="Enter height in cm">
+
+    <label>Weight (kg)</label>
+    <input type="number" id="weight" placeholder="Enter weight in kg">
+
+    <button onclick="calculateBMI()" id="button">Calculate</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="bmi.js"></script>
+   <script src="finisher-header.es5.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+new FinisherHeader({
+  "count": 4,
+  "size": {
+    "min": 1200,
+    "max": 1500,
+    "pulse": 0.1
+  },
+  "speed": {
+    "x": {
+      "min": 0,
+      "max": 0.2
+    },
+    "y": {
+      "min": 0,
+      "max": 0.2
+    }
+  },
+  "colors": {
+    "background": "#000000",
+    "particles": [
+      "#ff636b",
+      "#000000",
+      "#ff850d",
+      "#ff0000"
+    ]
+  },
+  "blending": "lighten",
+  "opacity": {
+    "center": 0.8,
+    "edge": 0.2
+  },
+  "skew": 0,
+  "shapes": [
+    "c",
+    "s"
+  ]
+});
+</script>
+</body>
+</html>

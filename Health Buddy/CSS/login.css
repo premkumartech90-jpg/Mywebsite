@@ -1,0 +1,185 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-color: black;
+}
+
+/* Transparent Glassmorphism Container */
+.login-container {
+  background: rgba(255, 255, 255, 0.15);
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border: 2px solid white;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-group input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: #eee;
+}
+
+/* Wrapper for icons */
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  outline: none;
+}
+
+.input-wrapper i {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  cursor: pointer; /* Eye icon is clickable */
+}
+
+/* Extra Options (Remember me + Forgot password) */
+.extra-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.extra-options a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.extra-options a:hover {
+  color: black;
+  background-color: white;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+/* Login Button */
+.submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #ff4e50;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.submit:hover {
+  background-color: #f2f2f2;
+}
+
+/* Signup Link */
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  color: black;
+  background-color: white;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+/* Google Login Button */
+.google-login {
+  margin-top: 15px;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: #3c4043;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+  width: 100%;
+  max-width: 100%;
+}
+
+.google-btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.google-btn:hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  background-color: #f7f8f8;
+}
+
+.father {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
